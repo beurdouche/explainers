@@ -7,7 +7,7 @@ We aim to **raise the security and privacy bar for web applications** by ensurin
 2. **Consistency**: Give users confidence that they receive the *same* code everyone else does (i.e., no user-specific malicious versions).  
 3. **Transparency**: Ensures stronger security for the Consistency mechanism. Encourage append-only logs that record published code versions, deterring hidden or short-lived changes and helping external audits.
 
-Our goal is a **standardized, browser-based mechanism** that sites can easily opt into—without forcing users to install extensions. While we propose high-level strategy and a technical proposal here, **technical details remain open for discussion** among browser vendors, web application providers, and standards bodies.
+Our goal is a **standardized, browser-based mechanism** that sites can easily opt into—without forcing users to install extensions. While we propose a high-level strategy here, **technical details remain open for discussion** among browser vendors, web application providers, and standards bodies.
 
 ---
 
@@ -18,9 +18,9 @@ Webmail, secure messaging, banking, and other sensitive sites face *strong* thre
 - **Hosting Compromises**: Attackers or misconfigurations can serve altered code.  
 
 ### User Trust
-Users **expect** they receive authentic code, consistent across all users, but the ecosystem does not have this property. This is particularly vital for end-to-end encryption: the page’s integrity is part of the security chain.
+Users **expect** that they receive authentic code, consistent across all users, but the ecosystem does not have this property. This is particularly vital for end-to-end encryption: page integrity is part of the chain of trust.
 
-### Extensions & Explicit Consent
+### Extensions
 Currently, only specialized browser extensions (like CodeVerify) can provide stronger assurances. But extensions require extra user steps, limiting adoption. Our approach makes these protections native and more widely available.
 
 ---
@@ -42,7 +42,7 @@ Currently, only specialized browser extensions (like CodeVerify) can provide str
 
 4. **Prototype & Standardize**  
    - We’ll refine prototypes through collaboration with major actors (e.g., WebAppSec at W3C) and consider parallel IETF work for the logging/transparency pieces.  
-   - **Implementation details** though we want to align on the high level information to raise to the user (if any), this should likely remain implementation specific on the browser side.
+   - **Implementation details**: Though we want to align on the high level information to raise to the user (if any), this should likely remain implementation specific on the browser side.
 
 ---
 
@@ -67,7 +67,7 @@ Currently, only specialized browser extensions (like CodeVerify) can provide str
 
 ## 6. Why Aren’t SRI or CodeVerify Sufficient on Their Own?
 1. **Subresource Integrity (SRI)**  
-   - **Limitations**: Requires distinct hashes for every resource; large sites find this unwieldy. It also *does not* provide transparency or consistency assurances. It is restricted to scripts at this time. Similarily, import-map-integrity only covers ES modules and not packages and Sig-based SRI is too costly for large sets of resources and doesn't cover Consistency...
+   - **Limitations**: Requires distinct hashes for every resource; large sites find this unwieldy. It is restricted to scripts at this time. Similarily, import-map-integrity only covers ES modules and not packages. Signature-based SRI is too costly for large sets of resources. SRI also *does not* provide transparency or consistency assurances.
 2. **CodeVerify Extension**  
    - **Limitations**: Relies on user installation, cannot verify all resource types, and remains out-of-band from standard browser features.  
 
