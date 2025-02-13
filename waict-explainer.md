@@ -7,7 +7,7 @@ We aim to **raise the security and privacy bar for web applications** by ensurin
 2. **Consistency**: Give users confidence that they receive the *same* code everyone else does (i.e., no user-specific malicious versions).  
 3. **Transparency**: Ensures stronger security for the Consistency mechanism. Encourage append-only logs that record published code versions, deterring hidden or short-lived changes and helping external audits.
 
-Our goal is a **standardized, browser-based mechanism** that sites can easily opt into—without forcing users to install extensions. While we propose high-level strategy and a technical proposal here, **technical details remain open for discussion** among browser vendors, web application providers, and standards bodies.
+Our goal is a **standardized, browser-based mechanism** that sites can easily opt into—without forcing users to install extensions. While we propose a high-level strategy here, **technical details remain open for discussion** among browser vendors, web application providers, and standards bodies.
 
 ---
 
