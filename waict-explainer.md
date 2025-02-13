@@ -67,7 +67,7 @@ Currently, only specialized browser extensions (like CodeVerify) can provide str
 
 ## 6. Why Aren’t SRI or CodeVerify Sufficient on Their Own?
 1. **Subresource Integrity (SRI)**  
-   - **Limitations**: Requires distinct hashes for every resource; large sites find this unwieldy. It also *does not* provide transparency or consistency assurances. It is restricted to scripts at this time. Similarily, import-map-integrity only covers ES modules and not packages and Sig-based SRI is too costly for large sets of resources and doesn't cover Consistency...
+   - **Limitations**: Requires distinct hashes for every resource; large sites find this unwieldy. It is restricted to scripts at this time. Similarily, import-map-integrity only covers ES modules and not packages. Signature-based SRI is too costly for large sets of resources. SRI also *does not* provide transparency or consistency assurances.
 2. **CodeVerify Extension**  
    - **Limitations**: Relies on user installation, cannot verify all resource types, and remains out-of-band from standard browser features.  
 
