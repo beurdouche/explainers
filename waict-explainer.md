@@ -42,7 +42,7 @@ Currently, only specialized browser extensions (like CodeVerify) can provide str
 
 4. **Prototype & Standardize**  
    - We’ll refine prototypes through collaboration with major actors (e.g., WebAppSec at W3C) and consider parallel IETF work for the logging/transparency pieces.  
-   - **Implementation details** though we want to align on the high level information to raise to the user (if any), this should likely remain implementation specific on the browser side.
+   - **Implementation details**: Though we want to align on the high level information to raise to the user (if any), this should likely remain implementation specific on the browser side.
 
 ---
 
