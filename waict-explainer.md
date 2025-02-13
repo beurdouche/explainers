@@ -18,9 +18,9 @@ Webmail, secure messaging, banking, and other sensitive sites face *strong* thre
 - **Hosting Compromises**: Attackers or misconfigurations can serve altered code.  
 
 ### User Trust
-Users **expect** they receive authentic code, consistent across all users, but the ecosystem does not have this property. This is particularly vital for end-to-end encryption: the page’s integrity is part of the security chain.
+Users **expect** that they receive authentic code, consistent across all users, but the ecosystem does not have this property. This is particularly vital for end-to-end encryption: page integrity is part of the chain of trust.
 
-### Extensions & Explicit Consent
+### Extensions
 Currently, only specialized browser extensions (like CodeVerify) can provide stronger assurances. But extensions require extra user steps, limiting adoption. Our approach makes these protections native and more widely available.
 
 ---
